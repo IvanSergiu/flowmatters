@@ -10,7 +10,8 @@
   border-top-right-radius: 0;
   .cover-img {
     max-height: 373px;
-    max-width: 849px;
+    max-width: 100%;
+    width: 100%;
   }
   .actions {
     padding: 12px;
@@ -146,8 +147,8 @@
     margin: 0px 15px;
     border: 1px solid #dfe0e4;
     .article-image {
-      max-width: 470px;
-      height: 275px;
+      max-width: 100%;
+      height: auto;
     }
     .article-website {
       color: #93949f;
@@ -219,11 +220,11 @@
 }
 
 #image-holder {
-  width: 500px;
+  max-width: 500px;
   height: auto;
   position: absolute;
   left: 300px;
-  top: 200px; /* Or perhaps different coordinates */
+  top: 200px;
   display: none;
 }
 
@@ -235,22 +236,20 @@
 
 #myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
 }
 
-/* Modal Content (image) */
 .modal-content {
   margin: auto;
   display: block;
@@ -258,20 +257,7 @@
   max-width: 700px;
 }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
+.modal-content {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -288,7 +274,6 @@
   to {transform:scale(1)}
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;

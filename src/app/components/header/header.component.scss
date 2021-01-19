@@ -4,14 +4,15 @@
   left: 0;
   right: 0;
   transform: translateY(-100%);
-  transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+  transition: 0.2s transform cubic-bezier(0.3, 0.73, 0.3, 0.74);
 }
 
 body.down header.clone {
   transform: translateY(0);
 }
 header {
-  position: relative;
+  //position: fixed;
+  z-index: 1;
   height: 42px;
   width: 100%;
   background-color: #3b5998;
@@ -19,9 +20,10 @@ header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgb(41, 72, 125);
+  
 }
 .header {
-  width: 1012px;
+  max-width: 1012px;
   height: 42px;
   margin: auto;
   display: flex;
@@ -43,7 +45,7 @@ header {
   }
   .search-container {
     margin-left: 0;
-    min-width: 144px;
+    min-width: 200px;
     width: 100%;
     background-color: #fff;
     border: 1px solid #3b5998;
@@ -120,4 +122,81 @@ header {
     flex: 1 1 auto;
     max-width: 60%;
   }
+}
+.create-page-button {
+  background-color: #42b72a;
+  outline: none;
+  border: 1px solid #42b72a;
+  color: white;
+  height: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+  line-height: 22px;
+  min-width: 175px;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3b5998;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  a {
+    padding: 0px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    min-width: 250px;
+  }
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.openbtn {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 0px;
+  border: none;
+  float: right;
+  outline: none;
+}
+
+#sidemenu-content {
+  transition: margin-left 0.5s;
+  padding: 10px;
+  width: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+    a {
+      font-size: 18px;
+    }
+  }
+}
+.fixed-header {
+  position: fixed;
+  margin-top: -42px;
+  transform: translateY(100%);
+  transition: 0.2s transform cubic-bezier(0.3, 0.73, 0.3, 0.74);
 }
