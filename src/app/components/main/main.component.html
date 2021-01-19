@@ -1,0 +1,231 @@
+<div class="main-container">
+  <div>
+    <img
+      class="cover-img"
+      src="../../../assets/cover.jpg"
+      alt=""
+    />
+  </div>
+
+  <div class="actions">
+    <div class="action-buttons-container">
+      <button class="action-buttons">
+        <i class="fas fa-thumbs-up margin-right-5"></i>Liked
+        <i class="fas fa-sort-down"></i>
+      </button>
+      <button class="action-buttons no-left-border">
+        <i class="fas fa-comment margin-right-5"></i>Message
+      </button>
+      <button class="action-buttons no-left-border">
+        <i class="fas fa-ellipsis-h margin-right-5"></i>More
+      </button>
+    </div>
+    <div class="width-100">
+      <button class="contact-button">Contact Us</button>
+    </div>
+  </div>
+</div>
+<div class="display-flex margin-bottom-20">
+  <div class="display-block">
+    <div class="post-container">
+      <div class="status-photo-container">
+        <div class="margin-right-10 margin-left-15">
+          <p class="status-text">
+            <i class="fas fa-pen-square"></i>
+            Status
+          </p>
+        </div>
+        <div>
+          <p class="photo-text">
+            <i class="fas fa-photo-video"></i>Photo/Video
+          </p>
+        </div>
+      </div>
+      <div class="avatar">
+        <img
+          class="avatar-img"
+          src="../../../assets/avatar.jpg"
+          alt=""
+        />
+        <input
+          class="placeholder-post post-input"
+          placeholder="Write something on this Page..."
+        />
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="display-flex margin-left-15 margin-top-15">
+        <img
+          class="avatar-img"
+          src="../../../assets/avatar.jpg"
+          alt=""
+        />
+        <div>
+          <p class="article-author">Flowmatters</p>
+          <p class="article-published">
+            23 hrs <span>&#183;</span>
+            <i class="fas fa-globe-europe"></i>
+          </p>
+        </div>
+      </div>
+      <div>
+        <h1 class="article-title">
+          Perspective FM: #15 How to create a winnig proposal with Dylan Baskind
+          from Qwilr
+        </h1>
+        <div class="article-content">
+          <swiper
+            id="swiper"
+            [slidesPerView]="1"
+            [spaceBetween]="50"
+            [navigation]="true"
+            [pagination]="{ clickable: true }"
+          >
+            <ng-template swiperSlide>
+              <img
+                class="article-image"
+                src="../../../assets/sliderimg1.jpg"
+              />
+            </ng-template>
+            <ng-template swiperSlide>
+              <img
+                class="article-image"
+                src="../../../assets/sliderimg2.jpeg"
+              />
+            </ng-template>
+            <ng-template swiperSlide>
+              <img
+                class="article-image"
+                src="../../../assets/sliderimg3.jpg"
+                />
+            </ng-template>
+          </swiper>
+
+          <div class="margin-tp-0 margin-lr-15">
+            <h1 class="font-size-15">
+              #15 How to create a awinning proposal with Dylan Baskind from
+              Qwilr
+            </h1>
+            <p class="font-size-12">
+              This week Jon is joined by Dylan Baskind - designer/developer and
+              founder of porposal writing tool Qwilr: We speak about Dylan's
+              journey from working in the...
+            </p>
+            <p class="font-size-12 article-website">PERSPECTIVE.FM</p>
+          </div>
+        </div>
+        <div class="article-actions margin-tb-15 margin-lr-15">
+          <button class="action-button">
+            <i class="fas fa-thumbs-up"> </i>Like
+          </button>
+          <button class="action-button margin-left-20">
+            <i class="fas fa-comment"> </i>Comment
+          </button>
+          <button class="action-button margin-left-20">
+            <i class="fas fa-share"> </i>Share
+          </button>
+        </div>
+        <div class="article-comment">
+          <div>
+            <img
+              class="avatar-img"
+              src="../../../assets/avatar.jpg"
+              alt=""
+            />
+          </div>
+          <div class="comment-container">
+            <input class="placeholder-post" placeholder="Write a comment..." />
+            <div class="display-flex">
+              <a class="margin-tb-0 margin-lr-8"
+                ><i class="fas fa-camera"></i
+              ></a>
+              <a class="margin-tb-0 margin-lr-8"
+                ><i class="far fa-smile"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="display-flex margin-left-15 margin-top-15">
+        <img
+          class="avatar-img"
+          src="../../../assets/avatar.jpg"
+          alt=""
+        />
+        <div>
+          <p class="article-author">Flowmatters</p>
+          <p class="article-published">
+            12 August at 13:06 <span>&#183;</span>
+            <i class="fas fa-globe-europe"></i>
+          </p>
+        </div>
+      </div>
+      <div>
+        <h1 class="article-title">
+          Good culture in digital teams is all about people
+        </h1>
+        <div class="article-content">
+          <img
+            class="article-image"
+            src="../../../assets/articleimg.jpg"
+          />
+          <div class="margin-tp-0 margin-lr-15">
+            <h1 class="font-size-15">
+              Good culture evolves from the bottom up
+            </h1>
+            <p class="font-size-12">
+              The Government Digital Service (GDS) is leading the digital
+              transformation of the UK government
+            </p>
+            <p class="font-size-12 article-website">
+              MEDIUM.STFI.RE | BY ADAM SILVER
+            </p>
+          </div>
+        </div>
+        <div class="article-actions margin-lr-15 margin-top-15 margin-bottom-0">
+          <button class="action-button">
+            <i class="fas fa-thumbs-up"> </i>Like
+          </button>
+          <button class="action-button margin-left-20">
+            <i class="fas fa-comment"> </i>Comment
+          </button>
+          <button class="action-button margin-left-20">
+            <i class="fas fa-share"> </i>Share
+          </button>
+        </div>
+
+        <div class="article-likes">
+          <i class="fas fa-thumbs-up"> </i>
+        </div>
+        <div class="article-comment">
+          <div>
+            <img
+              class="avatar-img"
+              src="../../../assets/avatar.jpg"
+              alt=""
+            />
+          </div>
+          <div class="comment-container">
+            <input
+              class="placeholder-post article-input"
+              placeholder="Write a comment..."
+            />
+            <div class="display-flex">
+              <a class="margin-tb-0 margin-lr-8"
+                ><i class="fas fa-camera"></i
+              ></a>
+              <a class="margin-tb-0 margin-lr-8"
+                ><i class="far fa-smile"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-sidebar-map class="width-100"></app-sidebar-map>
+</div>

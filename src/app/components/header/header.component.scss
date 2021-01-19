@@ -1,0 +1,123 @@
+.clone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+}
+
+body.down header.clone {
+  transform: translateY(0);
+}
+header {
+  position: relative;
+  height: 42px;
+  width: 100%;
+  background-color: #3b5998;
+  border-bottom: 1px solid #29487d;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(41, 72, 125);
+}
+.header {
+  width: 1012px;
+  height: 42px;
+  margin: auto;
+  display: flex;
+  .logo-container {
+    float: left;
+    a {
+      height: 100%;
+      width: 100%;
+      color: white;
+      cursor: pointer;
+      margin: 7px 0;
+      margin-left: -2px;
+      margin-right: 5px;
+      i {
+        font-size: 26px;
+        margin-top: 8px;
+      }
+    }
+  }
+  .search-container {
+    margin-left: 0;
+    min-width: 144px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #3b5998;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 26px;
+    left: -1px;
+    margin-left: 30px;
+    margin-top: 0;
+    max-width: 448px;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 48px;
+    position: relative;
+    top: 8px;
+    width: auto;
+    .search-input {
+      height: 22px;
+      border: 0px;
+      width: 100%;
+      outline: none;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+    }
+    .search-button {
+      background: #f5f6f7;
+      color: gray;
+      outline: none;
+      border: none;
+      border-radius: 0 2px 2px 0;
+      bottom: 0;
+      cursor: pointer;
+      display: block;
+      line-height: 1;
+      padding: 0 16px;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      z-index: 1;
+    }
+  }
+  .menu {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    margin-left: 8px;
+    line-height: 42px;
+    float: right;
+    width: 40%;
+    .home-tab {
+      position: relative;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      cursor: pointer;
+      span {
+        padding: 2px;
+        background: #29487d;
+        border: 01px solid #29487d;
+      }
+    }
+    .icon-color {
+      color: #1a2947;
+    }
+  }
+  .sort-down {
+    vertical-align: middle;
+    height: 25px;
+    margin-left: 5px;
+    color: #1a2947;
+  }
+  .logo-search-container {
+    flex: 1 1 auto;
+    max-width: 60%;
+  }
+}

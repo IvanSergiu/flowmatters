@@ -1,0 +1,309 @@
+.main-container {
+  background-color: #fff;
+  border-color: transparent;
+  border-top: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  position: relative;
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  .cover-img {
+    max-height: 373px;
+    max-width: 849px;
+  }
+  .actions {
+    padding: 12px;
+    display: flex;
+    border: 1px solid #dfe0e4;
+    border-top: 0px;
+    .action-buttons-container {
+      min-width: 240px;
+
+      .action-buttons {
+        cursor: pointer;
+        outline: none;
+        border-radius: 2px 0 0 2px;
+        line-height: 26px;
+        padding: 0 10px;
+        color: #4b4f56;
+        font-size: 12px;
+        background-color: #f5f6f7;
+        font-weight: bold;
+        border: 1px solid #ccd0d5;
+        margin-left: 0px !important;
+        .fa-thumbs-up {
+          color: #4267b2;
+        }
+        .fa-comment,
+        .fa-ellipsis-h {
+          color: #bec2c9;
+        }
+        .fa-sort-down {
+          vertical-align: middle;
+          height: 20px;
+        }
+      }
+      .no-left-border {
+        border-left-color: transparent;
+      }
+    }
+    .contact-button {
+      font-weight: 600;
+      float: right;
+      min-width: 286px;
+      height: 28px;
+      outline: none;
+      background-color: #4080ff;
+      border: 1px solid #4080ff;
+      border-radius: 2px;
+      color: white;
+    }
+  }
+}
+.post-container {
+  background-color: #fff;
+  margin-top: 15px;
+  border: 1px solid #dfe0e4;
+  border-radius: 1px;
+  max-width: 500px;
+  .status-photo-container {
+    display: flex;
+    border-bottom: 1px solid #dfe0e4;
+    .status-text {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      margin: 10px 0px;
+      font-size: 12px;
+      .fa-pen-square {
+        font-size: 20px;
+        color: #6182c6;
+        margin-right: 5px;
+      }
+    }
+    .photo-text {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      margin: 10px 0px;
+      color: #365899;
+      font-size: 12px;
+      .fa-photo-video {
+        font-size: 20px;
+        color: #f2b076;
+        margin-right: 5px;
+      }
+    }
+  }
+  .avatar {
+    display: flex;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-top: 15px;
+
+    .post-input {
+      width: 100%;
+      outline: none;
+      border: none;
+      margin-left: 10px;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}
+.article {
+  background-color: #fff;
+  margin-top: 15px;
+  border: 1px solid #dfe0e4;
+  border-radius: 1px;
+  max-width: 500px;
+  cursor: pointer;
+  .article-author {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #365899;
+    font-weight: 600;
+  }
+  .article-published {
+    margin-top: 0px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #90949c;
+    .fa-globe-europe {
+      margin-left: 5px;
+      color: #90949c;
+    }
+  }
+  .article-title {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0px 14px;
+  }
+  .article-content {
+    margin: 0px 15px;
+    border: 1px solid #dfe0e4;
+    .article-image {
+      max-width: 470px;
+      height: 275px;
+    }
+    .article-website {
+      color: #93949f;
+    }
+  }
+  .article-actions {
+    display: flex;
+    padding: 6px;
+    border-top: 1px solid #dfe0e4;
+    border-bottom: 1px solid #dfe0e4;
+    .action-button {
+      border: none;
+      color: #93949f;
+      font-weight: 600;
+      font-size: 12px;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+      i {
+        margin-right: 5px;
+        color: #93949f;
+      }
+    }
+  }
+  .article-likes {
+    padding: 5px 14px;
+    .fa-thumbs-up {
+      margin-left: 10px;
+      color: #4080ff;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+  .article-comment {
+    display: flex;
+    padding: 0px 15px;
+    padding-bottom: 5px;
+    .comment-container {
+      margin-left: 5px;
+      line-height: 40px;
+      height: 40px;
+      width: 100%;
+      border: 1px solid #dfe0e4;
+      display: flex;
+      input {
+        border: none;
+        outline: none;
+        width: 80%;
+        margin-left: 5px;
+      }
+      a i {
+        color: #93949f;
+      }
+    }
+  }
+}
+.avatar-img {
+  height: 40px;
+  width: 40px;
+}
+
+
+
+.swiper-slide {
+  background: #f1f1f1;
+  color: #000;
+  text-align: center;
+  line-height: 300px;
+}
+
+#image-holder {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  left: 300px;
+  top: 200px; /* Or perhaps different coordinates */
+  display: none;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+

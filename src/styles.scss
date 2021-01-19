@@ -1,1 +1,138 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~swiper/swiper-bundle";
+
+@for $i from 1 through 20 {
+  .font-size-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+@for $i from 100 through 300 {
+    .max-width-#{$i} {
+        max-width: #{$i}px;
+      }
+}
+@for $i from 1 through 30 {
+  .margin-left-#{$i} {
+    margin-left: #{$i}px;
+  }
+  .margin-right-#{$i} {
+    margin-right: #{$i}px;
+  }
+  .margin-top-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .margin-bottom-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .margin-#{$i} {
+    margin: #{$i}px;
+  }
+  .margin-auto {
+    margin: auto;
+  }
+  .margin-tb-#{$i} {
+    margin-top: #{$i}px;
+    margin-bottom: #{$i}px;
+  }
+  .margin-lr-#{$i} {
+    margin-left: #{$i}px;
+    margin-right: #{$i}px;
+  }
+  .padding-tb-#{$i} {
+    padding-top: #{$i}px;
+    padding-bottom: #{$i}px;
+  }
+  .padding-lr-#{$i} {
+    padding-left: #{$i}px;
+    padding-right: #{$i}px;
+  }
+  .padding-left-#{$i} {
+    padding-left: #{$i}px;
+  }
+  .padding-right-#{$i} {
+    padding-right: #{$i}px;
+  }
+  .padding-top-#{$i} {
+    padding-top: #{$i}px;
+  }
+  .padding-bottom-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+  .padding-#{$i} {
+    padding: #{$i}px;
+  }
+}
+.pointer {
+  cursor: pointer;
+}
+
+body {
+  margin: 0px;
+  font-family: liberation-sans,sans-serif !important;
+
+
+  background-color: #e9ebee;
+  margin-bottom: 50px;
+}
+.separator {
+  position: relative;
+}
+.separator:before {
+  content: "";
+  display: block;
+  height: 18px;
+  left: -10px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.width-100 {
+    width: 100%;
+}
+
+.display-flex {
+    display: flex;
+}
+.display-block {
+    display: block;
+}
+
+.placeholder-post::placeholder {
+  opacity: 0.5;
+}
+
+
+
+body { 
+    margin:0;
+    padding:0;
+    font-family: Helvetica;
+}
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+header.clone {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+    z-index: 1;
+    
+}
+
+body.down header.clone {
+    transform: translateY(0);
+}
+
+.swiper-container {
+  z-index: 0 !important;
+}
