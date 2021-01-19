@@ -4,21 +4,20 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
-    $(document).ready(function() {
-      var $header = $("header"),
-          $clone = $header.before($header.clone().addClass("clone"));
-      
-      $(window).on("scroll", function() {
-          var fromTop = $(window).scrollTop();
-          $("body").toggleClass("down", (fromTop > 200));
+    $(document).ready(function () {
+      var $header = $('header'),
+        $clone = $header.before($header.clone().addClass('clone'));
+
+      $(window).on('scroll', function () {
+        var fromTop = $(window).scrollTop();
+        $('body').toggleClass('down', fromTop > 200);
       });
-  });
+    });
   }
 }

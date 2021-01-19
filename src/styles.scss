@@ -103,7 +103,13 @@ body {
   opacity: 0.5;
 }
 
+button, a {
+  cursor: pointer;
+}
 
+.cursor-pointer {
+  cursor: pointer;
+}
 
 body { 
     margin:0;

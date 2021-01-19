@@ -43,13 +43,13 @@
     }
   }
   .photos-images {
-    padding: 3px;
+    padding: 1px;
 
-    width: 90px;
+    //width: 90px;
     height: 90px;
     img {
       cursor: pointer;
-      width: 93px;
+      width: 100px;
       height: 93px;
       border: 1px solid #dfe0e4;
     }
@@ -64,7 +64,7 @@
   .photo-grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 4px;
+    grid-gap: 0px;
   }
 }
 
